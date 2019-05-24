@@ -2,12 +2,12 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from './context';
 import Sidenav from './components/Sidenav/Sidenav';
+import Bottomnav from './components/Bottomnav/Bottomnav';
 import AddTodo from './components/AddTodo/AddTodo';
 import Todo from './components/Todo/Todo';
 import Shop from './components/Shop/Shop';
 import Setting from './components/Setting/Setting';
 import './App.css';
-import Bottomnav from './components/Bottomnav/Bottomnav';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Bottomnav />
           <div className="Main">
             <nav>
-              <h2>Logo</h2>
+              <h2>Task Manager</h2>
             </nav>
             <Switch>
               <Route exact path="/" component={AddTodo} />
