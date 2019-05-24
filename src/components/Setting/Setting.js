@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Setting.css';
 class Setting extends Component {
   defaultTheme() {
-    document.querySelector('h1').style.color = 'white';
+    console.log('Default');
   }
   darkTheme() {
     console.log('Dark');
