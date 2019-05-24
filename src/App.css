@@ -116,7 +116,7 @@ nav {
     overflow: hidden;
     overflow-y: scroll;
     width: 100vw;
-    max-height: 549px;
+    max-height: 519px;
   }
   .List {
     margin: 0 0 1em 10px;
@@ -131,7 +131,7 @@ nav {
     width: 100vw;
     height: 10vh;
     position: absolute;
-    bottom: 4em;
+    bottom: -0.3em;
     width: 100vw;
   }
   .SideMain h1 {
@@ -152,7 +152,7 @@ nav {
       overflow: hidden;
       overflow-y: scroll;
       width: 100vw;
-      max-height: 500px;
+      max-height: 480px;
     }
   }
 
