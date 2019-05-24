@@ -79,7 +79,7 @@ nav {
 .Edit,
 .Eddit {
   position: absolute;
-  top: 8px;
+  top: 5px;
 }
 .Edit,
 .Eddit {
@@ -92,7 +92,7 @@ nav {
 @media (max-width: 600px) {
   .App {
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 90vh;
   }
   img {
     width: 40px;

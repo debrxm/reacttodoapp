@@ -5,30 +5,18 @@
 .Setting {
   width: 100%;
   height: 100%;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Theme h2 {
+.Setting h2,
+.Setting h3 {
+  letter-spacing: 10px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #707070;
 }
-.Theme span {
-  padding: 4px 10px;
-  margin: 0 10px;
-  font-size: 0.8em;
-  border: 3px solid #707070;
-  cursor: pointer;
-  border-radius: 7px;
-}
-
-.Default {
-  background-image: linear-gradient(60deg, #41b0d4 0%, #21586a 100%);
-  color: #f2f2f2;
-}
-.Dark {
-  background-image: linear-gradient(60deg, #434343 0%, black 100%);
-  color: #f2f2f2;
-}
-.Mix {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: #f2f2f2;
+.Setting h2 {
+  font-weight: 100;
 }
