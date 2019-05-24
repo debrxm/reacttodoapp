@@ -1,0 +1,18 @@
+.Bottomnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #ececec;
+  height: 65px;
+  padding: 10px 20px 20px 23px;
+  visibility: hidden;
+  z-index: 9;
+}
+@media (max-width: 600px) {
+  .Bottomnav {
+    visibility: visible;
+  }
+}

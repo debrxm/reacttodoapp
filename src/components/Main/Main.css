@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #41b0d4;
+}
+nav {
+  text-align: right;
+  background-image: linear-gradient(to right, #41b0d4 0%, #21586a 100%);
+  border-bottom: 2px solid #000;
+  height: 74px;
+  padding-right: 4em;
+}

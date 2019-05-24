@@ -1,0 +1,174 @@
+.App {
+  display: grid;
+  grid-template-columns: 0.06fr 1fr;
+}
+img {
+  width: 50px;
+  color: #21586a;
+  cursor: pointer;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #41b0d4;
+}
+nav {
+  text-align: right;
+  background-image: linear-gradient(to right, #41b0d4 0%, #21586a 100%);
+  border-bottom: 2px solid #000;
+  height: 74px;
+  padding-right: 3em;
+}
+
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  height: 100%;
+  color: #707070;
+}
+.TodoList,
+.ShoppingList {
+  padding: 2em 2em 2em 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-width: 50%;
+  max-height: 80vh;
+}
+
+.SideMain {
+  height: 88.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 3em;
+}
+.SideMain img {
+  width: 50px;
+}
+.SideMain h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 230%;
+}
+.List {
+  background: #707070;
+  color: #f2f2f2;
+  margin: 0 0 1em 3em;
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: relative;
+}
+.List img {
+  width: 25px;
+  margin: 5px;
+}
+.List p {
+  font-size: 26px;
+  margin: 10px 60px 20px 40px;
+  display: inline;
+}
+.List .TodoP {
+  margin: 10px 100px 20px 40px;
+}
+.Check,
+.Edit,
+.Eddit {
+  position: absolute;
+  top: 8px;
+}
+.Edit,
+.Eddit {
+  right: 4px;
+}
+.Eddit {
+  top: 3px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  nav {
+    text-align: center;
+    padding-right: 0;
+  }
+  .Wrapper {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1em;
+  }
+  .TodoList,
+  .ShoppingList {
+    padding: 0 10px 2em 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100vw;
+    max-height: 549px;
+  }
+  .List {
+    margin: 0 0 1em 10px;
+  }
+  .SideMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 10px 30px;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 4em;
+    width: 100vw;
+  }
+  .SideMain h1 {
+    font-size: 120%;
+  }
+  /* .SideMain .Flex-item {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 4.5em;
+  } */
+
+  @media (max-height: 750px) {
+    .TodoList,
+    .ShoppingList {
+      padding: 0 10px 2em 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      width: 100vw;
+      max-height: 500px;
+    }
+  }
+
+  @media (max-height: 670px) {
+    .TodoList,
+    .ShoppingList {
+      padding: 0 10px 2em 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      width: 100vw;
+      max-height: 420px;
+    }
+  }
+  @media (max-height: 600px) {
+    .TodoList,
+    .ShoppingList {
+      padding: 0 10px 2em 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      width: 100vw;
+      max-height: 300px;
+    }
+  }
+}

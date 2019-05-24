@@ -1,0 +1,51 @@
+.Sidenav {
+  background: #ececec;
+  height: 100vh;
+  transition: all 0.2s;
+  overflow-x: hidden;
+}
+.Sidenav img {
+  margin-left: 1em;
+  display: inline;
+}
+.Sidenav img:hover ~ span {
+  visibility: visible;
+}
+.Sidenav .Menu {
+  background: #41b0d4;
+  height: 74px;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+}
+.Action {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.Action .Span {
+  margin-top: auto;
+}
+.Sidenav a {
+  text-decoration: none;
+  color: #707070;
+}
+.Sidenav .Link {
+  margin-top: 2em;
+}
+.Sidenav .MenuItem {
+  font-size: 23px;
+  position: relative;
+}
+.Sidenav .MenuItem p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  position: absolute;
+  left: 4em;
+  top: 15px;
+}
+@media (max-width: 600px) {
+  .Sidenav {
+    display: none;
+  }
+}
