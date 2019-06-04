@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 import { Shopping } from '../Counters/Counter';
 import ShoppingLists from './ShoppingLists';
 import add from '../../assets/add.svg';
-import './Shop.css';
+import darkadd from '../../assets/darkadd.svg';
 
 class Shop extends Component {
   render() {
+    const Dark = {
+      color: '#f2f2f2'
+    };
     return (
       <Consumer>
         {value => {
-          const { items } = value;
+          const { items, theme } = value;
           const Items = items.map(item => (
             <ShoppingLists
               key={item.id}
@@ -25,12 +28,13 @@ class Shop extends Component {
               <div className="ShoppingList">{Items}</div>
               <div className="SideMain">
                 <div>
-                  <Shopping />
-                  {/* <h3>Checked: {0}</h3> */}
+                  <Shopping theme={theme} />
                 </div>
-                <h1>Shopping Lists</h1>
+                <h1 style={theme === 'Dark' ? Dark : { color: '#707070' }}>
+                  Shopping Lists
+                </h1>
                 <Link to="/">
-                  <img src={add} alt="Add" />
+                  <img src={theme === 'Dark' ? darkadd : add} alt="Add" />
                 </Link>
               </div>
             </div>

@@ -70,7 +70,7 @@ class AddTodo extends Component {
     return (
       <Consumer>
         {value => {
-          const { dispatch } = value;
+          const { dispatch, theme } = value;
           return (
             <div className="AddTodo">
               <div className="Form">
@@ -89,22 +89,38 @@ class AddTodo extends Component {
                       style={todo}
                       onClick={this.addTodo.bind(this, dispatch)}
                     >
-                      <span>Todo</span> <i className="fa fa-plus" />
+                      <span>Todo</span>{' '}
+                      <i
+                        style={
+                          theme === 'Dark'
+                            ? { color: '#434343' }
+                            : { color: '#21586a' }
+                        }
+                        className="fa fa-plus"
+                      />
                     </span>
                     <span
                       className="Btn"
                       style={shop}
                       onClick={this.addShop.bind(this, dispatch)}
                     >
-                      <span>Shop</span> <i className="fa fa-plus" />
+                      <span>Shop</span>{' '}
+                      <i
+                        style={
+                          theme === 'Dark'
+                            ? { color: '#434343' }
+                            : { color: '#21586a' }
+                        }
+                        className="fa fa-plus"
+                      />
                     </span>
                   </div>
                 </div>
               </div>
               <div className="AddtodoSideMain">
                 <div className="Flex-item">
-                  <Tasks />
-                  <Shopping />
+                  <Tasks theme={theme} />
+                  <Shopping theme={theme} />
                 </div>
               </div>
             </div>

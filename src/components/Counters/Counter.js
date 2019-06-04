@@ -1,7 +1,11 @@
 import React from 'react';
 import { Consumer } from '../../context';
 
-export function Tasks() {
+const Dark = {
+  color: '#f2f2f2'
+};
+
+export const Tasks = ({ theme }) => {
   return (
     <Consumer>
       {value => {
@@ -9,14 +13,22 @@ export function Tasks() {
         const Todo = todos.map(todo => todo);
         return (
           <div>
-            <h3>Tasks: {Todo.length}</h3>
+            <h3
+              className="Counterh3"
+              style={theme === 'Dark' ? Dark : { color: '#707070' }}
+            >
+              Tasks: {Todo.length}
+            </h3>
           </div>
         );
       }}
     </Consumer>
   );
-}
-export function Shopping() {
+};
+export const Shopping = ({ theme }) => {
+  // const Dark = {
+  //   color: '#fff'
+  // };
   return (
     <Consumer>
       {value => {
@@ -24,17 +36,22 @@ export function Shopping() {
         const Items = items.map(item => item);
         return (
           <div>
-            <h3>Shopping: {Items.length}</h3>
+            <h3
+              className="Counterh3"
+              style={theme === 'Dark' ? Dark : { color: '#707070' }}
+            >
+              Shopping: {Items.length}
+            </h3>
           </div>
         );
       }}
     </Consumer>
   );
-}
+};
 export function Done() {
   return (
     <div>
-      <h3>Done: {0}</h3>
+      <h3 className="Counterh3">Done: {0}</h3>
     </div>
   );
 }

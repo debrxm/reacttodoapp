@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Consumer } from '../../context';
 import outline from '../../assets/outline.svg';
+import darkoutline from '../../assets/darkoutline.svg';
 import checked from '../../assets/checked.svg';
+import darkchecked from '../../assets/darkchecked.svg';
 // import edit from '../../assets/edit.svg';
 
 class Todo extends Component {
@@ -33,23 +35,35 @@ class Todo extends Component {
     return (
       <Consumer>
         {value => {
-          const { dispatch } = value;
+          const { dispatch, theme } = value;
           return (
             <div
+              style={
+                theme === 'Dark'
+                  ? { background: '#cecece', color: '#222222' }
+                  : { coloor: '#f2f2f2' }
+              }
               className="List"
               onDoubleClick={this.handleDelete.bind(this, id, dispatch)}
             >
               <span onClick={this.handleDone.bind(this, dispatch, id)}>
                 {done ? (
-                  <img className="Check" src={checked} alt="outline" />
+                  <img
+                    className="Check"
+                    src={theme === 'Dark' ? darkchecked : checked}
+                    alt="outline"
+                  />
                 ) : (
-                  <img className="Check" src={outline} alt="outline" />
+                  <img
+                    className="Check"
+                    src={theme === 'Dark' ? darkoutline : outline}
+                    alt="outline"
+                  />
                 )}
               </span>{' '}
               <p style={done ? { color: '#b3b0b0' } : { coloor: '#ececec' }}>
                 {shoppingList}
-              </p>{' '}
-              {/* <img className="Edit" src={edit} alt="edit" /> */}
+              </p>
             </div>
           );
         }}

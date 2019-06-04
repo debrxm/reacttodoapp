@@ -4,6 +4,11 @@ const Context = React.createContext();
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case 'THEME':
+      return {
+        ...state,
+        theme: action.payload
+      };
     case 'DELETE_TODO':
       return {
         ...state,
@@ -31,7 +36,7 @@ const reducer = (state, action) => {
 
 export class Provider extends Component {
   state = {
-    doneCount: [],
+    theme: 'default',
     todos: [],
     items: [],
     dispatch: action => this.setState(state => reducer(state, action))
@@ -40,20 +45,25 @@ export class Provider extends Component {
   componentDidMount() {
     if (
       localStorage.getItem('toDos') === null &&
-      localStorage.getItem('items') === null
+      localStorage.getItem('items') === null &&
+      localStorage.getItem('theme') === null
     ) {
       // Initialize new empty array
       let toDos = [];
       let items = [];
+      let theme = 'default';
       // Add to array
       // Set to localStorage
       localStorage.setItem('toDos', JSON.stringify(toDos));
       localStorage.setItem('items', JSON.stringify(items));
+      localStorage.setItem('theme', theme);
     }
     const toDos = JSON.parse(localStorage.getItem('toDos'));
     this.setState({ todos: toDos });
     const items = JSON.parse(localStorage.getItem('items'));
     this.setState({ items: items });
+    const theme = localStorage.getItem('theme');
+    this.setState({ theme: theme });
   }
   render() {
     return (
