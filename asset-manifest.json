@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reacttodoapp/static/css/main.2f588a75.chunk.css",
+    "main.css": "/reacttodoapp/static/css/main.8d14480e.chunk.css",
     "main.js": "/reacttodoapp/static/js/main.f0b9149d.chunk.js",
     "main.js.map": "/reacttodoapp/static/js/main.f0b9149d.chunk.js.map",
     "runtime~main.js": "/reacttodoapp/static/js/runtime~main.a7ad2f43.js",
@@ -8,9 +8,9 @@
     "static/js/2.6c661cf3.chunk.js": "/reacttodoapp/static/js/2.6c661cf3.chunk.js",
     "static/js/2.6c661cf3.chunk.js.map": "/reacttodoapp/static/js/2.6c661cf3.chunk.js.map",
     "index.html": "/reacttodoapp/index.html",
-    "precache-manifest.78e1feb7b9f7b4fe5a3696ad3e05d2b4.js": "/reacttodoapp/precache-manifest.78e1feb7b9f7b4fe5a3696ad3e05d2b4.js",
+    "precache-manifest.6b128249404478c211d9056ac1b107a0.js": "/reacttodoapp/precache-manifest.6b128249404478c211d9056ac1b107a0.js",
     "service-worker.js": "/reacttodoapp/service-worker.js",
-    "static/css/main.2f588a75.chunk.css.map": "/reacttodoapp/static/css/main.2f588a75.chunk.css.map",
+    "static/css/main.8d14480e.chunk.css.map": "/reacttodoapp/static/css/main.8d14480e.chunk.css.map",
     "static/media/add.svg": "/reacttodoapp/static/media/add.4d535f54.svg",
     "static/media/bin.svg": "/reacttodoapp/static/media/bin.e63f9cd7.svg",
     "static/media/checked.svg": "/reacttodoapp/static/media/checked.b31a2233.svg",
