@@ -64,7 +64,7 @@ nav {
   color: #ececec;
   margin: 0 0 1em 3em;
   border-radius: 10px;
-  padding: 0px 1px 10px 1px;
+  padding: 3px 1px 10px 1px;
   position: relative;
 }
 .List img {
@@ -82,14 +82,14 @@ nav {
 .Edit,
 .Eddit {
   position: absolute;
-  top: 3px;
+  top: 1px;
 }
 .Check {
   left: 2px;
 }
 .TodoL .Check {
   left: 2px;
-  /* top: 18px; */
+  top: 2px;
 }
 .Edit,
 .Eddit {
