@@ -1,6 +1,6 @@
-* {
+/* * {
   transition: all 0.6s;
-}
+} */
 .App {
   display: grid;
   grid-template-columns: 0.06fr 1fr;
@@ -64,7 +64,7 @@ nav {
   color: #ececec;
   margin: 0 0 1em 3em;
   border-radius: 10px;
-  padding: 5px 1px;
+  padding: 0px 1px 10px 1px;
   position: relative;
 }
 .List img {
@@ -72,25 +72,31 @@ nav {
   margin: 5px;
 }
 .List p {
+  width: 76%;
   font-size: 20px;
-  margin: 10px 60px 20px 30px;
-  display: inline;
+  margin: -15px 0px 0px 40px;
+  display: block;
 }
-.List .TodoP {
-  margin: 10px 100px 20px 30px;
-}
+
 .Check,
 .Edit,
 .Eddit {
   position: absolute;
-  top: 2px;
+  top: 3px;
+}
+.Check {
+  left: 2px;
+}
+.TodoL .Check {
+  left: 2px;
+  /* top: 18px; */
 }
 .Edit,
 .Eddit {
-  right: 0px;
+  right: -10px;
 }
 .Eddit {
-  top: -7px;
+  top: -3px;
 }
 .Counterh3 {
   text-transform: uppercase;
@@ -128,6 +134,9 @@ nav {
   }
   .List {
     margin: 0 0 1em 10px;
+  }
+  .List p {
+    font-size: 17px;
   }
   .SideMain {
     display: flex;

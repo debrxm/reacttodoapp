@@ -45,7 +45,7 @@ class Todo extends Component {
                   ? { background: '#cecece', color: '#222222' }
                   : { coloor: '#f2f2f2' }
               }
-              className="List"
+              className="List TodoL"
             >
               <span onClick={this.handleDone.bind(this, dispatch, id)}>
                 {done ? (
