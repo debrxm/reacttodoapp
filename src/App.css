@@ -1,6 +1,6 @@
-/* * {
-  transition: all 0.6s;
-} */
+* {
+  box-sizing: border-box;
+}
 .App {
   display: grid;
   grid-template-columns: 0.06fr 1fr;
@@ -16,12 +16,14 @@ img {
   width: 100%;
   background: #41b0d4;
   transition: all 0.6s;
+  height: 100vh;
 }
 nav {
   text-align: right;
   background-image: linear-gradient(to right, #41b0d4 0%, #21586a 100%);
   border-bottom: 2px solid #41b0d4;
   height: 74px;
+  padding: 10px 0;
   padding-right: 3em;
   text-transform: uppercase;
   color: #ececec;
@@ -30,7 +32,7 @@ nav {
 .Wrapper {
   display: grid;
   grid-template-columns: 1fr 0.4fr;
-  height: 100%;
+  height: calc(100vh - 75px);
   color: #707070;
 }
 .TodoList,
@@ -119,7 +121,6 @@ nav {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: flex-start;
     position: relative;
     padding-top: 1em;
