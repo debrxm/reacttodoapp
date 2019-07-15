@@ -9,7 +9,7 @@ import Shop from './components/Shop/Shop';
 import Setting from './components/Setting/Setting';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <Provider>
       <Router>
@@ -59,6 +59,6 @@ function App() {
       </Router>
     </Provider>
   );
-}
+};
 
 export default App;

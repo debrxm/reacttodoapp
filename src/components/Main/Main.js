@@ -15,8 +15,6 @@ const Main = () => {
           <Route exact path="/" component={AddTodo} />
           <Route exact path="/todo" component={Todo} />
         </Switch>
-
-        {/* <Shop /> */}
       </div>
     </Router>
   );
