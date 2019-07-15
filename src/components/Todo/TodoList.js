@@ -4,7 +4,6 @@ import outline from '../../assets/outline.svg';
 import darkoutline from '../../assets/darkoutline.svg';
 import checked from '../../assets/checked.svg';
 import darkchecked from '../../assets/darkchecked.svg';
-// import edit from '../../assets/edit.svg';
 import bin from '../../assets/bin.svg';
 
 class Todo extends Component {
@@ -79,7 +78,7 @@ class Todo extends Component {
     return (
       <Consumer>
         {value => {
-          const { dispatch, theme } = value;
+          const { dispatch, theme, todos } = value;
           return (
             <div
               style={
@@ -89,7 +88,7 @@ class Todo extends Component {
               }
               className="List TodoL"
             >
-              <span onClick={this.handleDone.bind(this, dispatch, id)}>
+              <span onClick={this.handleDone.bind(this, dispatch, id, todos)}>
                 {done ? (
                   <img
                     className="Check"
@@ -116,7 +115,6 @@ class Todo extends Component {
                 {todoList}
               </p>
               <span className="Eddit">
-                {/* <img src={edit} alt="edit" /> */}
                 <img
                   src={bin}
                   alt="bin"

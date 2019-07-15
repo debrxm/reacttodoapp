@@ -7,15 +7,36 @@
   height: 100%;
   color: #707070;
   padding: 2em;
+  position: relative;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
 }
-.Setting h2 {
+.Setting h2,
+.Setting h3 {
   font-size: 30px;
   font-weight: 100;
   text-transform: uppercase;
+}
+.About {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+}
+.About h3 {
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+}
+.About span {
+  font-size: 23px;
+  font-weight: 100;
+  color: #c2bfbf;
 }
 span {
   font-size: 15px;

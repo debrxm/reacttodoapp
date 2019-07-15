@@ -4,7 +4,6 @@ import outline from '../../assets/outline.svg';
 import darkoutline from '../../assets/darkoutline.svg';
 import checked from '../../assets/checked.svg';
 import darkchecked from '../../assets/darkchecked.svg';
-// import edit from '../../assets/edit.svg';
 
 class Todo extends Component {
   Ref = React.createRef();
