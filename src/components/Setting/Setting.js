@@ -65,8 +65,15 @@ class Setting extends Component {
               >
                 Mix
               </span>
-              {/* <h3>Settings</h3>
-        <h2>Not Available</h2> */}
+              <div className="About">
+                <h3
+                  style={
+                    theme === 'Dark' ? { color: '#fff' } : { color: '#707070' }
+                  }
+                >
+                  Version <span>1.3</span>{' '}
+                </h3>
+              </div>
             </div>
           );
         }}

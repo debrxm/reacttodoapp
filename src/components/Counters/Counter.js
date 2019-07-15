@@ -48,10 +48,17 @@ export const Shopping = ({ theme }) => {
     </Consumer>
   );
 };
-export function Done() {
+export const Done = () => {
   return (
-    <div>
-      <h3 className="Counterh3">Done: {0}</h3>
-    </div>
+    <Consumer>
+      {value => {
+        const { todoCount } = value;
+        return (
+          <div>
+            <h3 className="Counterh3">Done: {todoCount}</h3>
+          </div>
+        );
+      }}
+    </Consumer>
   );
-}
+};
