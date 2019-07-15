@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/reacttodoapp/static/css/main.03be95f2.chunk.css",
+    "main.js": "/reacttodoapp/static/js/main.845048d1.chunk.js",
+    "main.js.map": "/reacttodoapp/static/js/main.845048d1.chunk.js.map",
+    "runtime~main.js": "/reacttodoapp/static/js/runtime~main.a7ad2f43.js",
+    "runtime~main.js.map": "/reacttodoapp/static/js/runtime~main.a7ad2f43.js.map",
+    "static/js/2.c613ebf7.chunk.js": "/reacttodoapp/static/js/2.c613ebf7.chunk.js",
+    "static/js/2.c613ebf7.chunk.js.map": "/reacttodoapp/static/js/2.c613ebf7.chunk.js.map",
+    "index.html": "/reacttodoapp/index.html",
+    "precache-manifest.66bbd49276ca5f23f12ad25e7f0e3928.js": "/reacttodoapp/precache-manifest.66bbd49276ca5f23f12ad25e7f0e3928.js",
+    "service-worker.js": "/reacttodoapp/service-worker.js",
+    "static/css/main.03be95f2.chunk.css.map": "/reacttodoapp/static/css/main.03be95f2.chunk.css.map",
+    "static/media/add.svg": "/reacttodoapp/static/media/add.4d535f54.svg",
+    "static/media/bin.svg": "/reacttodoapp/static/media/bin.e63f9cd7.svg",
+    "static/media/checked.svg": "/reacttodoapp/static/media/checked.b31a2233.svg",
+    "static/media/darkadd.svg": "/reacttodoapp/static/media/darkadd.65417437.svg",
+    "static/media/darkchecked.svg": "/reacttodoapp/static/media/darkchecked.7c2c39b1.svg",
+    "static/media/darkmenu.svg": "/reacttodoapp/static/media/darkmenu.476acb1e.svg",
+    "static/media/darkoutline.svg": "/reacttodoapp/static/media/darkoutline.42f891b7.svg",
+    "static/media/darksettings.svg": "/reacttodoapp/static/media/darksettings.58016859.svg",
+    "static/media/darkshop.svg": "/reacttodoapp/static/media/darkshop.90a751fe.svg",
+    "static/media/menu.svg": "/reacttodoapp/static/media/menu.d17ac427.svg",
+    "static/media/outline.svg": "/reacttodoapp/static/media/outline.ac7e2298.svg",
+    "static/media/settings.svg": "/reacttodoapp/static/media/settings.38945469.svg",
+    "static/media/shop.svg": "/reacttodoapp/static/media/shop.334d5b0a.svg"
+  }
+}
