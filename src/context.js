@@ -29,6 +29,11 @@ const reducer = (state, action) => {
         ...state,
         items: action.payload
       };
+    case 'TODO_COUNT':
+      return {
+        ...state,
+        todoCount: action.payload
+      };
     default:
       return state;
   }
@@ -38,6 +43,7 @@ export class Provider extends Component {
   state = {
     theme: 'default',
     todos: [],
+    todoCount: 0,
     items: [],
     dispatch: action => this.setState(state => reducer(state, action))
   };

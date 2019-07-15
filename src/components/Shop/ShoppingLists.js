@@ -7,6 +7,35 @@ import darkchecked from '../../assets/darkchecked.svg';
 // import edit from '../../assets/edit.svg';
 
 class Todo extends Component {
+  Ref = React.createRef();
+  editable = () => {
+    this.Ref.current.contentEditable = true;
+  };
+  handleEdit = (dispatch, id) => {
+    const List = document.querySelectorAll('#p');
+
+    let items = JSON.parse(localStorage.getItem('items'));
+
+    for (let i = 0; i < List.length; i++) {
+      for (let i = 0; i < items.length; i++) {
+        if (items[i].id === id) {
+          let item = items[i];
+          item.item = List[i].textContent;
+        }
+      }
+    }
+    localStorage.setItem('items', JSON.stringify(items));
+    items = JSON.parse(localStorage.getItem('items'));
+    dispatch({ type: 'ADD_ITEM', payload: items });
+  };
+  handleKeyPress = event => {
+    const List = document.querySelectorAll('#p');
+    for (let i = 0; i < List.length; i++) {
+      if (event.which === 13 || event.keyCode === 13) {
+        List[i].blur();
+      }
+    }
+  };
   handleDone = (dispatch, id) => {
     let items = JSON.parse(localStorage.getItem('items'));
     for (let i = 0; i < items.length; i++) {
@@ -43,7 +72,7 @@ class Todo extends Component {
                   ? { background: '#cecece', color: '#222222' }
                   : { coloor: '#f2f2f2' }
               }
-              className="List"
+              className="List Hint"
               onDoubleClick={this.handleDelete.bind(this, id, dispatch)}
             >
               <span onClick={this.handleDone.bind(this, dispatch, id)}>
@@ -61,9 +90,17 @@ class Todo extends Component {
                   />
                 )}
               </span>{' '}
-              <p style={done ? { color: '#b3b0b0' } : { coloor: '#ececec' }}>
+              <p
+                id="p"
+                ref={this.Ref}
+                onMouseEnter={this.editable}
+                onBlur={this.handleEdit.bind(this, dispatch, id)}
+                onKeyPress={this.handleKeyPress}
+                style={done ? { color: '#b3b0b0' } : { coloor: '#ececec' }}
+              >
                 {shoppingList}
               </p>
+              <span className="ShowHint">Tap twice to delete</span>
             </div>
           );
         }}

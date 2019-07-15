@@ -69,6 +69,20 @@ nav {
   padding: 3px 1px 10px 1px;
   position: relative;
 }
+.ShowHint {
+  content: 'Doubleclick to delete';
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 11px;
+  font-weight: 500;
+  color: tomato;
+}
+.Hint:hover .ShowHint {
+  opacity: 1;
+}
 .List img {
   width: 25px;
   margin: 5px;
@@ -78,6 +92,7 @@ nav {
   font-size: 20px;
   margin: -15px 0px 0px 40px;
   display: block;
+  outline: none;
 }
 
 .Check,
